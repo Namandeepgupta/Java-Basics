@@ -1,17 +1,34 @@
 import java.util.*;
 
-public class Question3{
-    public static void main (String args[]){
+public class Question3 {
+    public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Cost of a pencil = ");
-        float pencil = sc.nextFloat();
-        System.out.print("Cost of a pen = ");
-        float pen = sc.nextFloat();
-        System.out.print("Cost of an eraser = ");
-        float eraser = sc.nextFloat();
-        float totalcost = pencil+pen+eraser;
-        System.out.println("Total cost of the items = " +totalcost);
-        float includegst = (0.18f*totalcost)+totalcost;
-        System.out.println("Total cost after including GST = " +includegst);
+        System.out.print("Number of week: ");
+        int week = sc.nextInt();
+        switch(week){
+            case 1 :
+            System.out.println("Sunday");
+                break;
+            case 2 : 
+            System.out.println("Monday");
+                break;
+            case 3 :
+            System.out.println("Tuesday");
+                break;
+            case 4 :
+            System.out.println("Wednesday");
+                break;
+            case 5 :
+            System.out.println("Thursday");
+                break;
+            case 6 :
+            System.out.println("Friday");
+                break;
+            case 7 :
+            System.out.println("Saturday");
+                break;
+            default : 
+            System.out.println("Wrong info");
+        }
     }
 }
